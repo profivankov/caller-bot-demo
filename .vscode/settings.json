@@ -1,0 +1,16 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
+	},
+	"[typescript]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "never"
+		}
+	},
+	"eslint.validate": ["javascript", "javascriptreact"],
+	// Changes all ESLint complaints to yellow so it would be easier to separate from TS errors
+	"eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+	"typescript.tsdk": "./node_modules/typescript/lib"
+}
